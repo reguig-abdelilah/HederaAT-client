@@ -42,7 +42,9 @@ export const startPairing = async(hashconnect)=>{
     // if(!hashconnect)
     try {
     // if(hashconnect.connectedAccountIds.length === 0)
-        hashconnect.openPairingModal()
+    console.log('Just Before calling openPairingModal ', hashconnect)
+    hashconnect.openPairingModal()
+    console.log('After calling openPairingModal ', hashconnect)
     } catch (error) {
     console.error('Error peering wallet:', error);
     }
